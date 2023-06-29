@@ -289,12 +289,12 @@ if __name__ == '__main__':
             print(name)
             render_in_img(img, lidar, bbox_2d,bbox_3d, label, calib, args.save_file,name)
 
-            f = open(no_2dfilestxt, "a")
-            for line in no2dfiles:
-                f.write(line + '\n')
-                path = os.path.dirname(os.path.abspath(line))
-                try:
-                    shutil.move(path, args.updir+'/badfile')
-                except:
-                    print(f'bad move {path}')
+            # f = open(no_2dfilestxt, "a")
+            # for line in no2dfiles:
+            #     f.write(line + '\n')
+            #     path = os.path.dirname(os.path.abspath(line))
+            #     try:
+            #         shutil.move(path, args.updir+'/badfile')
+            #     except:
+            #         print(f'bad move {path}')
 
